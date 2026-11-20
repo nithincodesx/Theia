@@ -1,0 +1,13 @@
+sounddevice
+webrtcvad-wheels
+faster-whisper
+edge-tts
+pygame
+pyautogui
+noisereduce
+numpy
+scipy
+
+livekit-agents
+livekit-plugins-silero
+SpeechRecognition

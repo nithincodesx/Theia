@@ -1,0 +1,90 @@
+{
+  "stt": {
+    "model": "medium",
+    "device": "cpu",
+    "compute_type": "int8",
+    "backend": "whisper",
+    "google_language": "en-US",
+    "partial_model": "small",
+    "language": "en",
+    "ai_correct": {
+      "enabled": true,
+      "min_logprob": -0.55,
+      "max_no_speech": 0.55
+    },
+    "decode": {
+      "beam_size": 5,
+      "best_of": 5,
+      "temperature": 0.0,
+      "vad_filter": true,
+      "condition_on_previous_text": false,
+      "no_speech_threshold": 0.6
+    },
+    "device": "cpu",
+    "compute_type": "int8",
+    "backend": "whisper",
+    "google_language": "en-US",
+    "partial_model": "small",
+    "language": "en",
+    "ai_correct": {
+      "enabled": false,
+      "min_logprob": -0.55,
+      "max_no_speech": 0.55
+    },
+    "decode": {
+      "beam_size": 1,
+      "best_of": 1,
+      "temperature": 0.0,
+      "vad_filter": true,
+      "condition_on_previous_text": false,
+      "no_speech_threshold": 0.6
+    },
+    "initial_prompt": "lana, theia, now, stop, pause, play, music, song, volume, open, close, click, type, press, scroll, screen, app, google, youtube, hey, baby, daddy, master, miss",
+    "groq_model": "whisper-large-v3-turbo"
+  },
+  "noise": {
+    "enabled": true,
+    "suppressor": "rnnoise",
+    "rnnoise_dll": "",
+    "noisereduce": true
+  },
+  "live_transcription": {
+    "enabled": true,
+    "partial_interval_ms": 500,
+    "window_max_s": 8.0,
+    "min_partial_s": 0.6
+  },
+  "llm": {
+    "base_url": "https://api.inceptionlabs.ai/v1",
+    "model": "mercury-3",
+    "temperature": 0.9,
+    "max_history": 12
+  },
+  "tts": {
+    "voice": "en-US-EmmaNeural",
+    "rate": "+8%",
+    "volume": "+0%"
+  },
+  "sfx": {
+    "enabled": false,
+    "chance": 0.25
+  },
+  "vad": {
+    "aggressiveness": 1,
+    "silence_after": 0.3,
+    "continuation_max": 1.2,
+    "max_duration": 10.0,
+    "wake_timeout": 30.0,
+    "tail_ms": 250
+  },
+  "wake": {
+    "enabled": false,
+    "word": "now"
+  },
+  "persona": {
+    "name": "Theia",
+    "spice": 1.0,
+    "user_name": "daddy",
+    "greeting": "Hey {user_name}, {name} here. Ready when you are."
+  }
+}

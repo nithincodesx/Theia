@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Theia — an open-source voice companion. Talk to her: she listens, thinks, and answers out loud. Voice and temperament are yours to set.">
+<title>Theia — Voice Companion</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='%230c0c0c'%3E%3Crect x='4' y='18' width='5' height='10'/%3E%3Crect x='13.5' y='12' width='5' height='16'/%3E%3Crect x='23' y='5' width='5' height='23'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/style.css?v=12">
+</head>
+<body>
+
+<header id="site-header" class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#overview" aria-label="Theia — back to top">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="14" width="4" height="7"></rect>
+        <rect x="10" y="9" width="4" height="12"></rect>
+        <rect x="17" y="4" width="4" height="17"></rect>
+      </svg>
+      <span class="brand-name">Theia</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#specs">Specifications</a>
+      <a href="#field">Field</a>
+      <a href="#console">Console</a>
+    </nav>
+    <span id="status" class="pill" role="status" aria-live="polite">
+      <span id="dot" class="dot" aria-hidden="true"></span>
+      <span id="status-text">connecting…</span>
+    </span>
+  </div>
+</header>
+
+<main>
+
+  <div id="dossier" class="view">
+
+  <section id="overview" class="hero">
+    <div class="hero-visual" aria-hidden="true">
+      <span class="cross cross-tl"></span>
+      <span class="cross cross-tr"></span>
+      <span class="cross cross-bl"></span>
+      <span class="cross cross-br"></span>
+      <div class="device">
+        <div class="device-ring outer"></div>
+        <div class="device-ring dashed"></div>
+        <div class="device-ring inner"></div>
+        <div class="device-core"></div>
+      </div>
+      <span class="anno anno-a">Pod / Ø 88 mm</span>
+      <span class="anno anno-b">Array / 6 mic</span>
+      <span class="anno anno-c">Core / R 3.2</span>
+      <span class="anno anno-d">Shell / ABS</span>
+    </div>
+    <div class="hero-copy">
+      <h1 class="display">Theia</h1>
+      <p class="lede">A voice companion that stays in the room with you — hears you, thinks, and answers back out loud. Open source, runs locally on your machine, no cloud needed for her ears or her voice.</p>
+      <div class="hero-actions">
+        <a class="btn-black" href="#console">Open console</a>
+        <a class="link-under" href="#field">See her in the field</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="specs" class="specs">
+    <div class="specs-visual" aria-hidden="true">
+      <span class="cross cross-tl"></span>
+      <span class="cross cross-tr"></span>
+      <span class="cross cross-bl"></span>
+      <span class="cross cross-br"></span>
+      <div class="specs-caption">Detail — core array</div>
+      <div class="device">
+        <div class="device-ring outer"></div>
+        <div class="device-ring dashed"></div>
+        <div class="device-ring inner"></div>
+        <div class="device-core"></div>
+      </div>
+    </div>
+    <div class="rail" aria-label="Theia specifications">
+      <div class="row"><span class="row-value" data-key="stt">—</span><span class="row-label">Speech recognition</span></div>
+      <div class="row"><span class="row-value" data-key="llm">—</span><span class="row-label">Brain</span></div>
+      <div class="row"><span class="row-value" data-key="voice">—</span><span class="row-label">Voice</span></div>
+      <div class="row"><span class="row-value" data-key="live_transcription">—</span><span class="row-label">Live transcript</span></div>
+      <div class="row"><span class="row-value" data-key="spice">—</span><span class="row-label">Temperament</span></div>
+      <div class="row"><span class="row-value" data-key="latency">1.2s</span><span class="row-label">Typical response</span></div>
+    </div>
+  </section>
+
+  <section id="field" class="chapter">
+    <svg class="monitor" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.08">
+        <line x1="0" y1="140" x2="1200" y2="140"></line>
+        <line x1="0" y1="280" x2="1200" y2="280"></line>
+        <line x1="0" y1="420" x2="1200" y2="420"></line>
+        <line x1="0" y1="560" x2="1200" y2="560"></line>
+        <line x1="150" y1="0" x2="150" y2="700"></line>
+        <line x1="300" y1="0" x2="300" y2="700"></line>
+        <line x1="450" y1="0" x2="450" y2="700"></line>
+        <line x1="600" y1="0" x2="600" y2="700"></line>
+        <line x1="750" y1="0" x2="750" y2="700"></line>
+        <line x1="900" y1="0" x2="900" y2="700"></line>
+        <line x1="1050" y1="0" x2="1050" y2="700"></line>
+      </g>
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.16">
+        <rect x="120" y="90" width="960" height="520"></rect>
+        <circle cx="600" cy="350" r="170"></circle>
+        <circle cx="600" cy="350" r="92"></circle>
+      </g>
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.06">
+        <line x1="600" y1="80" x2="600" y2="620"></line>
+        <line x1="420" y1="350" x2="780" y2="350"></line>
+      </g>
+      <line x1="620" y1="350" x2="760" y2="350" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1.5"></line>
+      <circle cx="600" cy="350" r="6" fill="#ffffff" fill-opacity="0.9"></circle>
+    </svg>
+    <div class="chapter-meta">
+      <span class="rec"><span class="rec-dot" aria-hidden="true"></span>REC</span>
+      <span id="timecode" class="timecode">00:00:00</span>
+    </div>
+    <div class="chapter-copy">
+      <h2 class="media-heading">Field recording</h2>
+      <p>One late night in a quiet apartment. She hears a voice, wakes, listens, and answers before the sentence is finished — no button, no screen, no cloud round-trip.</p>
+    </div>
+  </section>
+
+  </div>
+
+  <section id="console-panel" class="panel view-hidden" aria-label="Console">
+    <div class="panel-hero">
+      <div class="panel-hero-copy">
+        <h2 class="editorial">Console</h2>
+        <p class="body">The voice is the product. Pick her voice, arm or disarm her ears, and watch her hear you.</p>
+      </div>
+      <div class="device" aria-hidden="true">
+        <div class="device-ring outer"></div>
+        <div class="device-ring dashed"></div>
+        <div class="device-ring inner"></div>
+        <div class="device-core"></div>
+      </div>
+    </div>
+
+    <div class="panel-grid">
+      <div class="card voice-card">
+        <h3 class="card-title">Voices</h3>
+        <p class="card-note">Select a voice — it applies immediately. Use Test to hear it.</p>
+        <div id="voice-list" class="voice-list"></div>
+      </div>
+
+      <div class="card controls-card">
+        <h3 class="card-title">Controls</h3>
+        <div class="control-grid">
+          <button id="btn-mic" class="util on" type="button" aria-pressed="true">
+            <svg class="util-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="3" width="6" height="11" rx="3"></rect>
+              <path d="M5 11a7 7 0 0 0 14 0"></path>
+              <line x1="12" y1="18" x2="12" y2="21"></line>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+            </svg>
+            <span id="mic-txt" class="util-txt">Mic on</span>
+          </button>
+          <button id="btn-agent" class="util on" type="button" aria-pressed="true">
+            <svg class="util-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"></path>
+            </svg>
+            <span id="agent-txt" class="util-txt">Agent on</span>
+          </button>
+          <button id="btn-test" class="btn-black" type="button">Test voice</button>
+        </div>
+        <div class="spec-mini" aria-label="Live configuration">
+          <div class="spec-mini-row"><span class="spec-mini-label">Brain</span><span class="spec-mini-value" data-key="llm">—</span></div>
+          <div class="spec-mini-row"><span class="spec-mini-label">Speech</span><span class="spec-mini-value" data-key="stt">—</span></div>
+          <div class="spec-mini-row"><span class="spec-mini-label">Temperament</span><span class="spec-mini-value" data-key="spice">—</span></div>
+          <div class="spec-mini-row"><span class="spec-mini-label">Live transcript</span><span class="spec-mini-value" data-key="live_transcription">—</span></div>
+        </div>
+      </div>
+
+      <div class="card activity-card">
+        <h3 class="card-title">Activity</h3>
+        <p id="activity-empty" class="activity-empty">Nothing yet — say something and watch her listen.</p>
+        <ol id="activity" class="activity"></ol>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="14" width="4" height="7"></rect>
+        <rect x="10" y="9" width="4" height="12"></rect>
+        <rect x="17" y="4" width="4" height="17"></rect>
+      </svg>
+      <span class="brand-name">Theia</span>
+      <p class="body footer-note">Open-source voice companion. Runs entirely on your machine; the brain is the Inception Mercury API.</p>
+    </div>
+    <nav class="footer-col" aria-label="Product">
+      <h3 class="footer-label">Product</h3>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#specs">Specifications</a></li>
+        <li><a href="#field">Field</a></li>
+        <li><a href="#console">Console</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h3 class="footer-label">System</h3>
+      <ul class="footer-static">
+        <li>Speech · faster-whisper</li>
+        <li>Brain · mercury-3</li>
+        <li>Voice · edge-tts</li>
+
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="footer-label">About</h3>
+      <ul class="footer-static">
+        <li>Open source</li>
+        <li>Local inference</li>
+        <li>MIT licensed</li>
+        <li>No data collection</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Theia Project</span>
+    <span>Built light · lab white</span>
+  </div>
+</footer>
+
+<script src="/static/app.js?v=12"></script>
+</body>
+</html>
